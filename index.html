@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="./assets/images/favicons/safari-pinned-tab.svg"
+      color="#004AF2"
+    />
+    <meta name="msapplication-TileColor" content="#004AF2" />
+    <meta name="theme-color" content="#004AF2" />
+
+    <link rel="stylesheet" href="./assets/styles/aos.css?v=1.0.1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/slick.css?v=1.0.1" />
+    <link rel="stylesheet" href="./assets/styles/style.css?v=1.0.1" />
+    <title>Center Logistic</title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- Header -->
+      <header class="header" id="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo" href="#" data-scroll="#intro"
+              ><img
+                class="img--logo"
+                src="./assets/images/header/logo.svg"
+                alt=""
+              />
+              <span class="header__logo-text">Center Logistic</span>
+            </a>
+
+            <nav class="nav" id="nav">
+              <a class="nav__link" data-scroll="#services" href="#">Сервисы</a>
+              <a class="nav__link" data-scroll="#clients" href="#">Клиенты</a>
+              <a class="nav__link" data-scroll="#benefits" href="#"
+                >Преимущества</a
+              >
+              <a class="nav__link" data-scroll="#team" href="#">Команда</a>
+              <a class="nav__link" data-scroll="#mission" href="#"
+                >Наша миссия</a
+              >
+              <a class="nav__link" data-scroll="#news" href="blog.html">Блог</a>
+              <a class="nav__link" href="#" data-modal="#becomeClientModal"
+                >Наши контакты</a
+              >
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- Header -->
+
+      <!-- Intro -->
+      <div class="intro" id="intro">
+        <!-- Intro slider -->
+        <div class="intro__slider" id="introSlider">
+          <div class="slider__item">
+            <div
+              class="intro__slider-item"
+              style="
+                background-image: url('./assets/images/slider/slide-1.jpg');
+              "
+            ></div>
+          </div>
+          <div class="slider__item">
+            <div
+              class="intro__slider-item"
+              style="
+                background-image: url('./assets/images/slider/slide-2.jpg');
+              "
+            ></div>
+          </div>
+          <div class="slider__item">
+            <div
+              class="intro__slider-item"
+              style="
+                background-image: url('./assets/images/slider/slide-3.jpg');
+              "
+            ></div>
+          </div>
+          <div class="slider__item">
+            <div
+              class="intro__slider-item"
+              style="
+                background-image: url('./assets/images/slider/slide-4.jpg');
+              "
+            ></div>
+          </div>
+        </div>
+        <!-- Intro slider -->
+        <div class="container">
+          <!-- Intro__inner -->
+          <div class="intro__inner">
+            <div class="request-form request-form-intro" data-aos="fade-right">
+              <div class="request-form__header">
+                <h3 class="request-form__title">Получить обратный звонок</h3>
+                <div class="request-form__text">
+                  Оставьте заявку и наш менеджер с Вами свяжется
+                </div>
+              </div>
+              <div class="request-form__content">
+                <form novalidate class="form js-form" action="/" method="post">
+                  <div class="form__group">
+                    <div class="form__group-user"></div>
+                    <input
+                      class="input js-input"
+                      type="text"
+                      placeholder="Ваше имя"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <div class="form__group-tel"></div>
+                    <input
+                      class="input js-input js-input-phone"
+                      type="tel"
+                      placeholder="Ваш телефон"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <div class="form__group-email"></div>
+                    <input
+                      class="input js-input js-input-email"
+                      type="email"
+                      placeholder="Ваш email"
+                    />
+                  </div>
+                  <button class="btn btn--orange btn--block" type="submit">
+                    <span>Перезвоните мне</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="intro__text" data-aos="fade-left">
+              <div class="intro__countries">
+                Россия, Соединеные Штаты Америки, Европа, Азия
+              </div>
+              <h1 class="intro__title">
+                <span class="intro__title-amp">&amp;</span>
+                Trans<br />Logistic
+              </h1>
+            </div>
+            <div class="intro__slider-arrows">
+              <button
+                id="introSliderPrev"
+                class="intro__slider-btn intro__slider-prev"
+                type="button"
+              >
+                Prev
+              </button>
+              <button
+                id="introSliderNext"
+                class="intro__slider-btn intro__slider-next"
+                type="button"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <!-- Intro__inner -->
+        </div>
+      </div>
+      <!-- Intro -->
+
+      <!-- Services -->
+      <section class="section" id="services" data-scrollspy="#services">
+        <div class="container">
+          <!-- Services -->
+          <div class="services">
+            <h2 class="services__main-title">Сервисы</h2>
+            <div class="services__item" data-aos="fade-down">
+              <h4 class="services__title">Доставка по земле</h4>
+              <div class="services__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  similique explicabo reiciendis molestiae minima fuga magnam,
+                  aut, quam id officiis, qui soluta ea saepe debitis nesciunt
+                  voluptatibus facere quo incidunt.
+                </p>
+              </div>
+              <div class="services__footer">
+                <a class="services__link" href="">Узнать больше</a>
+              </div>
+            </div>
+            <div
+              class="services__item"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <h4 class="services__title">Доставка по рельсам</h4>
+              <div class="services__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  similique explicabo reiciendis molestiae minima fuga magnam,
+                  au
+                </p>
+              </div>
+              <div class="services__footer">
+                <a class="services__link" href="">Узнать больше</a>
+              </div>
+            </div>
+            <div
+              class="services__item"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
+              <h4 class="services__title">Доставка по воде</h4>
+              <div class="services__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  similique explicabo reiciendis molestiae minima fuga magnam,
+                  aut, quam id officiis, qui soluta ea saepe debitis nesciunt
+                  voluptatibus facere quo incidunt.
+                </p>
+              </div>
+              <div class="services__footer">
+                <a class="services__link" href="">Узнать больше</a>
+              </div>
+            </div>
+            <div
+              class="services__item"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <h4 class="services__title">Доставка по воздуху</h4>
+              <div class="services__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  similique explicabo reiciendis molestiae minima fuga magnam,
+                  au
+                </p>
+              </div>
+              <div class="services__footer">
+                <a class="services__link" href="">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+          <!-- Services -->
+        </div>
+      </section>
+      <!-- Services -->
+
+      <!-- Clients section -->
+      <section class="section" id="clients" data-scrollspy="#clients">
+        <div class="container">
+          <h2 class="section__title"><span>Наши</span> клиенты</h2>
+
+          <div class="clients">
+            <div class="clients__logos">
+              <ul class="clients__list">
+                <li data-aos="fade-right" data-aos-anchor=".clients">
+                  <a href="#" target="_blank">
+                    <img
+                      class="img clients__list-logo"
+                      src="./assets/images/clients/atica.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="50"
+                  data-aos-anchor=".clients"
+                >
+                  <a href="#" target="_blank">
+                    <img
+                      class="img clients__list-logo"
+                      src="./assets/images/clients/hex-lab.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                  data-aos-anchor=".clients"
+                >
+                  <a href="#" target="_blank">
+                    <img
+                      class="img clients__list-logo"
+                      src="./assets/images/clients/amara.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="150"
+                  data-aos-anchor=".clients"
+                >
+                  <a href="#" target="_blank">
+                    <img
+                      class="img clients__list-logo"
+                      src="./assets/images/clients/muzica-2.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-anchor=".clients"
+                >
+                  <a href="#" target="_blank">
+                    <img
+                      class="img clients__list-logo"
+                      src="./assets/images/clients/solaytic.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="250"
+                  data-aos-anchor=".clients"
+                >
+                  <a href="#" target="_blank">
+                    <img
+                      class="img clients__list-logo"
+                      src="./assets/images/clients/hexa.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                  data-aos-anchor=".clients"
+                >
+                  <a href="#" target="_blank">
+                    <img
+                      class="img clients__list-logo"
+                      src="./assets/images/clients/utosia-2.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="350"
+                  data-aos-anchor=".clients"
+                >
+                  <a href="#" target="_blank">
+                    <img
+                      class="img clients__list-logo"
+                      src="./assets/images/clients/fox-hub.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Clients logos -->
+            <!-- Clients reviews -->
+            <div class="clients__reviews">
+              <div class="reviews" id="reviewsSlider">
+                <div class="reviews__item">
+                  <div class="reviews__header">
+                    <img
+                      class="reviews__photo"
+                      src="./assets/images/clients/people1.jpg"
+                      alt=""
+                    />
+                    <div class="reviews__header-content">
+                      <div class="reviews__name">Александр Кузнецов</div>
+                      <div class="reviews__company">FOX Hub - SEO</div>
+                    </div>
+                  </div>
+                  <div class="reviews__content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      A ex iste porro dolore quod ipsa? Inventore a optio
+                      accusamus quo fugiat, repudiandae temporibus voluptatem
+                      labore nihil doloribus esse repellat eius.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Modi in nam doloribus suscipit laborum voluptas, maxime
+                      ullam assumenda unde dolores labore tenetur beatae
+                      doloremque laudantium maiores dolore, tempore officia
+                      aliquid.
+                    </p>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__header">
+                    <img
+                      class="reviews__photo"
+                      src="./assets/images/clients/people2.jpg"
+                      alt=""
+                    />
+                    <div class="reviews__header-content">
+                      <div class="reviews__name">Максим Сибгатуллин</div>
+                      <div class="reviews__company">FOX Hub - Developer</div>
+                    </div>
+                  </div>
+                  <div class="reviews__content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      A ex iste porro dolore quod ipsa? Inventore a optio
+                      accusamus quo fugiat, repudiandae temporibus voluptatem
+                      labore nihil doloribus esse repellat eius.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Modi in nam doloribus suscipit laborum voluptas, maxime
+                      ullam assumenda unde dolores labore tenetur beatae
+                      doloremque laudantium maiores dolore, tempore officia
+                      aliquid.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Clients reviews -->
+          </div>
+          <!-- Clients -->
+          <div class="clients__footer">
+            <button
+              class="btn btn--orange btn-shadow"
+              data-modal="#becomeClientModal"
+            >
+              <span>Стать клиентом</span>
+            </button>
+            <div class="clients-love">
+              <span>Мы любим наших клиентов</span>
+              <div class="clients-love__heart"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Container -->
+      </section>
+      <!-- Clients section -->
+
+      <!-- Benefits section -->
+      <section class="section" id="benefits" data-scrollspy="#benefits">
+        <!-- Container -->
+        <div class="container">
+          <h2 class="section__title"><span>Наши</span> преимущества</h2>
+          <!-- Benefits -->
+          <div class="benefits">
+            <div class="benefits__col">
+              <ul class="benefits-list">
+                <li
+                  class="benefits-list__item"
+                  data-aos="fade-down"
+                  data-aos-anchor=".benefits"
+                >
+                  <h4 class="benefits-list__title">Безопасно</h4>
+                  <div class="benefits-list__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio consequuntur
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="benefits-list__item"
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                  data-aos-anchor=".benefits"
+                >
+                  <h4 class="benefits-list__title">Водители высокого уровня</h4>
+                  <div class="benefits-list__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio consequuntur
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="benefits-list__item"
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                  data-aos-anchor=".benefits"
+                >
+                  <h4 class="benefits-list__title">
+                    Качество &amp; поддрержка 24/7
+                  </h4>
+                  <div class="benefits-list__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio consequuntur
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="benefits-list__item"
+                  data-aos="fade-down"
+                  data-aos-delay="300"
+                  data-aos-anchor=".benefits"
+                >
+                  <h4 class="benefits-list__title">Персональный менеджер</h4>
+                  <div class="benefits-list__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio consequuntur
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="benefits__col">
+              <img
+                class="img benefits__img"
+                src="./assets/images/benefits/benefits-photo.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Benefits -->
+        </div>
+        <!-- Container -->
+      </section>
+      <!-- Benefits section -->
+
+      <!-- Team section -->
+      <section class="section section--gray" id="team" data-scrollspy="#team">
+        <!-- Container  -->
+        <div class="container">
+          <h2 class="section__title"><span>Наша</span> команда</h2>
+          <!-- Team  -->
+          <div class="team">
+            <div class="team__col" data-aos="fade-in">
+              <div class="team__item">
+                <img
+                  class="img team__photo"
+                  src="./assets/images/team/team-1.jpg"
+                  alt=""
+                />
+                <div class="team__item-footer">
+                  <div class="team__name">Дмитрий Варушин</div>
+                  <div class="team__prof">
+                    Логистический менеджер - 7 лет опыта работы
+                  </div>
+                  <ul class="team__contacts">
+                    <li>
+                      <img
+                        class="team__contacts-icon"
+                        src="./assets/images/team/mail-black-icon.svg"
+                        alt=""
+                      />
+                      <a href="mailto:dmitriyvarushin@example.com"
+                        >dmitriyvarushin@example.com</a
+                      >
+                    </li>
+                    <li>
+                      <img
+                        class="team__contacts-icon"
+                        src="./assets/images/team/phone-black-icon.svg"
+                        alt=""
+                      />
+                      <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team__col" data-aos="fade-in" data-aos-delay="100">
+              <div class="team__item">
+                <img
+                  class="img team__photo"
+                  src="./assets/images/team/team-2.jpg"
+                  alt=""
+                />
+                <div class="team__item-footer">
+                  <div class="team__name">Вадим Петров</div>
+                  <div class="team__prof">
+                    Инженер программист - 9 лет опыта работы
+                  </div>
+                  <ul class="team__contacts">
+                    <li>
+                      <img
+                        class="team__contacts-icon"
+                        src="./assets/images/team/mail-black-icon.svg"
+                        alt=""
+                      />
+                      <a href="mailto:vadimpetrov@example.com"
+                        >vadimpetrov@example.com</a
+                      >
+                    </li>
+                    <li>
+                      <img
+                        class="team__contacts-icon"
+                        src="./assets/images/team/phone-black-icon.svg"
+                        alt=""
+                      />
+                      <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team__col" data-aos="fade-in" data-aos-delay="200">
+              <div class="team__item">
+                <img
+                  class="img team__photo"
+                  src="./assets/images/team/team-3.jpg"
+                  alt=""
+                />
+                <div class="team__item-footer">
+                  <div class="team__name">Екатерина Шульц</div>
+                  <div class="team__prof">
+                    Специалист по маркетингу - 10 лет опыта работы
+                  </div>
+                  <ul class="team__contacts">
+                    <li>
+                      <img
+                        class="team__contacts-icon"
+                        src="./assets/images/team/mail-black-icon.svg"
+                        alt=""
+                      />
+                      <a href="mailto:ecaterinashulch@example.com"
+                        >ecaterinashulch@example.com</a
+                      >
+                    </li>
+                    <li>
+                      <img
+                        class="team__contacts-icon"
+                        src="./assets/images/team/phone-black-icon.svg"
+                        alt=""
+                      />
+                      <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team  -->
+        </div>
+        <!-- Container  -->
+      </section>
+      <!-- Team section -->
+
+      <!-- Mission section -->
+      <section class="section" id="mission" data-scrollspy="#mission">
+        <!-- Container  -->
+        <div class="container rel">
+          <h2 class="our__mission">Наша миссия</h2>
+          <div class="mission" data-aos="fade-up" data-aos-duration="1250">
+            <h3 class="mission__title">
+              Предоставлять нашим клиентам качественные услуги
+            </h3>
+            <h4 class="mission__subtitle">
+              Забронируйте свой груз прямо сейчас &amp; Ваша работа станет
+              намного легче
+            </h4>
+          </div>
+          <div class="text__center">
+            <button
+              class="btn btn--orange btn-shadow"
+              type="submit"
+              data-modal="#becomeClientModal"
+            >
+              <span>Стать клиентом</span>
+            </button>
+          </div>
+        </div>
+        <!-- Container  -->
+      </section>
+      <!-- Mission section -->
+
+      <!-- Articles section -->
+      <section class="section section--last" id="news" data-scrollspy="#news">
+        <!-- Container  -->
+        <div class="container">
+          <h2 class="section__title"><span>Интересно</span> почитать</h2>
+
+          <!-- Articles -->
+          <div class="articles">
+            <article class="articles__item" data-aos="fade-in">
+              <h4 class="articles__title">
+                <a href="#">Новостной заголовок</a>
+              </h4>
+              <div class="articles__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  quis facere fugiat soluta. Iste, reiciendis? Asperiores
+                  laborum libero adipisci eveniet quod sequi, odit non odio
+                  temporibus porro commodi qui doloribus.
+                </p>
+                <time class="articles__date" datetime="2022-05-21 19:00"
+                  >21 мая, 2022</time
+                >
+              </div>
+            </article>
+            <article
+              class="articles__item"
+              data-aos="fade-in"
+              data-aos-delay="100"
+            >
+              <h4 class="articles__title">
+                <a href="#">Новостной заголовок</a>
+              </h4>
+              <div class="articles__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  quis facere fugiat soluta. Iste, reiciendis? Asperiores
+                  laborum libero adipisci eveniet quod sequi, odit non odio
+                  temporibus porro commodi qui doloribus.
+                </p>
+                <time class="articles__date" datetime="2022-05-21 19:00"
+                  >21 мая, 2022</time
+                >
+              </div>
+            </article>
+          </div>
+          <a href="blog.html" class="btn btn--orange btn-shadow"
+            ><span>Посетить блог</span></a
+          >
+          <!-- Articles -->
+        </div>
+        <!-- Container  -->
+      </section>
+      <!-- Articles section  -->
+
+      <!-- Footer section  -->
+      <footer class="footer">
+        <div class="container">
+          <a
+            class="header__logo header__logo--black"
+            href="#"
+            data-scroll="#intro"
+            ><img
+              class="img--logo"
+              src="./assets/images/footer/logo-black.svg"
+              alt=""
+            />
+            <span class="header__logo-text">Center Logistic</span>
+          </a>
+          <address class="footer__contacts">
+            <p>Москва, Улица Комсомольская 43</p>
+            <p>
+              Звоните нам:
+              <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a> или пишите
+              на почту:
+              <a href="mailto:translogistic@example.com"
+                >translogistic@example.com</a
+              >
+            </p>
+          </address>
+
+          <nav class="footer__nav">
+            <a href="text.html">Пользовательское соглашение</a>
+            <a href="blog.html">Наш блог</a>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer section  -->
+
+      <!-- Modal -->
+      <div class="modal" id="becomeClientModal">
+        <div class="modal__inner">
+          <div class="modal__content">
+            <div class="modal__header">
+              <h4 class="modal__title">
+                Нужно доставить груз?<br />Мы поможем!
+              </h4>
+              <div class="modal__text">
+                <p>Заполните маленькую форму и мы перезвоним</p>
+              </div>
+            </div>
+
+            <form class="form" action="/" method="post">
+              <div class="form__group">
+                <div class="form__group-user--black"></div>
+                <input
+                  class="input input--dark"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="form__group">
+                <div class="form__group-tel--black"></div>
+                <input
+                  class="input input--dark"
+                  type="tel"
+                  placeholder="Ваш телефон"
+                />
+              </div>
+              <div class="form__group">
+                <div class="form__group-email--black"></div>
+                <input
+                  class="input input--dark"
+                  type="email"
+                  placeholder="Ваш email"
+                />
+              </div>
+              <button class="btn btn--orange btn--block" type="submit">
+                <span>Перезвоните мне</span>
+              </button>
+            </form>
+
+            <div class="modal__footer">
+              <h4 class="modal__footer-title">Наши контакты</h4>
+              <address class="modal__contacts">
+                <p>Москва, Улица Комсомольская 43</p>
+                <p>
+                  Phone: <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a>
+                </p>
+                <p>
+                  Email:
+                  <a href="mailto:translogistic@example.com"
+                    >translogistic@example.com</a
+                  >
+                </p>
+              </address>
+            </div>
+
+            <button class="modal__close" data-modal-close="">
+              <img src="./assets/images/modal/close.svg" alt="" />
+            </button>
+          </div>
+          <!-- Modal content -->
+        </div>
+        <!-- Modal inner -->
+      </div>
+      <!-- Modal -->
+
+      <!-- Modal -->
+      <div class="modal" id="thanksModal">
+        <div class="modal__inner">
+          <div class="modal__content-thanks">
+            <div class="modal__header-thanks">
+              <img
+                class="img modal__icon"
+                src="./assets/images/modal/tick.svg"
+                alt=""
+              />
+              <h4 class="modal__title">Спасибо за ваш запрос</h4>
+              <div class="modal__text">
+                <p>Мы перезвоним вам как можно скорее!</p>
+              </div>
+            </div>
+
+            <div class="modal__footer">
+              <h4 class="modal__footer-title">Наши контакты</h4>
+              <address class="modal__contacts">
+                <p>Москва, Улица Комсомольская 43</p>
+                <p>
+                  Phone: <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a>
+                </p>
+                <p>
+                  Email:
+                  <a href="mailto:translogistic@example.com"
+                    >translogistic@example.com</a
+                  >
+                </p>
+              </address>
+            </div>
+
+            <button class="modal__close-thanks">
+              <img src="./assets/images/modal/close.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <!-- Modal inner -->
+      </div>
+      <!-- Modal -->
+    </div>
+
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/validationForm.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
